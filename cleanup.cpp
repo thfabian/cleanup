@@ -27,8 +27,8 @@ trash* trash_ptr;
 struct grouped : public std::numpunct<char>
 {
 	explicit grouped(std::size_t refs = 0) : std::numpunct<char>(refs) {}
-    virtual char do_thousands_sep() const { return '\''; }
-    virtual std::string do_grouping() const { return "\003"; }
+	virtual char do_thousands_sep() const { return '\''; }
+	virtual std::string do_grouping() const { return "\003"; }
 };
  
 /// Main entry point

@@ -40,7 +40,7 @@ public:
 	/// Constructor - launch deleter thread
 	trash(bool cache);
 	
-	/// Constructor - join deleter thread
+	/// Destructor - join deleter thread
 	~trash();
 
 	/// Increment file counter
