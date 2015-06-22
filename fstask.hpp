@@ -34,13 +34,13 @@ private:
 	boost::filesystem::path path_;
 
 public:
-    /// Move Constructor
-    fstask(boost::filesystem::path&& cur_dir)
-    	:	path_(cur_dir)
-    {}
+	/// Move Constructor
+	fstask(boost::filesystem::path&& cur_dir)
+	:	path_(cur_dir)
+	{}
 
-    /// Overrides virtual function task::execute
-    tbb::task* execute() override; 
+	/// Overrides virtual function task::execute
+	tbb::task* execute() override; 
 };
 
 
