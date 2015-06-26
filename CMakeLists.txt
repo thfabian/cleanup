@@ -53,7 +53,7 @@ target_link_libraries(cleanup ${Boost_LIBRARIES} ${TBB_LIBRARIES})
 install(TARGETS cleanup RUNTIME DESTINATION bin)
 
 ################################################################################
-# Unistallation
+# Uninstallation
 ################################################################################
 add_custom_target(uninstall 
       "${CMAKE_COMMAND}" -P "${CMAKE_CURRENT_SOURCE_DIR}/CMake/unistall.cmake")
