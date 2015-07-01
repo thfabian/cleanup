@@ -68,10 +68,7 @@ int main(int argc, char* argv[])
 #else
 		std::cout << " - Debug build";
 #endif
-
-		std::cout << " [TBB]" << std::endl;
-
-		std::cout << "\nUSAGE: cleanup [options]\n" << std::endl;
+		std::cout << " [TBB]\n\nUSAGE: cleanup [options]\n\n";
 		std::cout << desc << std::endl;
 		return 0;
 	}
