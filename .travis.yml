@@ -1,0 +1,29 @@
+os:
+  - linux
+
+language: cpp
+
+compiler:
+  - gcc
+
+before_install:
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get install -qq g++-4.9 cmake libtbb-dev libboost-dev
+
+before_script:
+  - export CXX=g++-4.9
+  - mkdir build
+  - cd build
+  - cmake ../
+  - make
+
+script:
+   - echo "passed"
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
