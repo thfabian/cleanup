@@ -1,4 +1,4 @@
-cleanup - v2.1 [![Build Status](https://travis-ci.org/thfabian/cleanup.svg?branch=master)](https://travis-ci.org/thfabian/cleanup)
+cleanup - v2.1
 ==============
 
 Cleanup will recursively search your file system, starting at $HOME by default, for files ending with '~' (Linux backup files) and delete them.
