@@ -46,7 +46,7 @@ public:
     INLINE void incrementFileCount() { fileCount_++; }
 
     /// Add a file to the queue
-    INLINE void add(boost::filesystem::path&& p)
+    INLINE void add(const boost::filesystem::path& p)
     {
         queue_.push(p);
         cv_.notify_all();
