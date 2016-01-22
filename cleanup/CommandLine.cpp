@@ -43,7 +43,7 @@ CommandLine::CommandLine() : desc_("Options")
         ("dir,d", po::value<std::vector<std::string>>(),
          "Specify the directories at which the recursive search shall start. "
          "These directories will be merged with the directories found in the "
-         "configuration file")
+         "configuration file.")
         // --config-file
         ("config-file", po::value<std::vector<std::string>>(),
          "Absolute path to the configuration file. If nothing is specified, "

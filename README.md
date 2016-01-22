@@ -23,7 +23,7 @@ To compile and install the program to `/usr/local/bin`:
 ```bash
 git clone https://github.com/thfabian/cleanup
 cd cleanup
-mkdir build && cd build
+mkdir cleanup/build && cd cleanup/build
 cmake ../
 make
 sudo make install 
