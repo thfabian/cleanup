@@ -22,4 +22,4 @@
 *.app
 *.pdb
 # Directories
-build
+cleanup/build*
